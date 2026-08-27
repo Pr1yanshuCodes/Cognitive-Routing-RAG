@@ -59,7 +59,7 @@ python main.py "Should companies be allowed to use AI to set individual prices f
 
 First run downloads the local embedding model (`sentence-transformers/all-MiniLM-L6-v2`, ~80MB, no API key needed) and creates a `chroma_db/` folder — everything else is local except the Groq LLM calls.
 
-## Why vector routing instead of an LLM router
+## Why Vector Routing
 
 An LLM-based router costs a full inference call just to decide *who should answer*.
 Here, each persona is described once by a short expertise paragraph + a handful of
@@ -83,7 +83,7 @@ This is a defense-in-depth layer for a demo project, not a production-grade guar
 - **Swap the LLM**: `config.py` centralizes model name / temperature; any LangChain chat model works, not just Groq.
 - **More debate rounds**: `graph/debate_graph.py`'s `rebuttal_node` is a single pass — loop it N times by adding a conditional edge back to itself keyed on `state["round"]`.
 
-## Limitations (be upfront about these in an interview)
+## Limitations
 
 - The injection-defense layer is regex/heuristic based, not a trained classifier — it stops common jailbreak phrasing, not novel obfuscated attacks.
 - Vector routing picks personas by *topical* similarity, not by argument quality — a persona can be routed in and have little to actually say.
