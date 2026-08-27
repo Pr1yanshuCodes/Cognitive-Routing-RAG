@@ -1,0 +1,32 @@
+A real-time personalized pricing system typically has three components: a
+feature pipeline that assembles signals about the buyer (device, location,
+browsing history, time of day, inferred segment), a pricing model that maps
+those features to a price, and a serving layer that returns a price within the
+latency budget of a page load (usually under 200ms). The hard engineering
+problem is rarely the model itself -- it's keeping the feature pipeline fresh
+and consistent between training and serving, since stale or mismatched
+features silently degrade the model without throwing an error.
+
+At scale, the biggest failure mode isn't inaccuracy, it's inconsistency: the
+same buyer seeing two different prices for the same item across two devices
+or two visits, because caching layers and A/B test buckets aren't
+synchronized. This is an engineering bug with a legal and PR cost far larger
+than the bug itself, since it looks like deliberate manipulation even when
+it's a race condition.
+
+Fraud-detection systems built for real-time transaction scoring generally use
+a similar architecture to personalized pricing: a streaming feature store, a
+low-latency scoring model, and a decision layer with configurable thresholds.
+The key design trade-off is precision versus recall under a strict latency
+budget -- you cannot run a heavy ensemble model synchronously at checkout, so
+production systems usually run a fast model online and a slower, more
+accurate model asynchronously to catch what the fast model missed, reconciling
+afterward.
+
+Attack surface for any system that makes automated decisions about a specific
+person includes: model inversion (inferring what features led to a decision
+by probing the system repeatedly), input manipulation (an attacker learning
+which signals lower their assigned risk/price and gaming them), and data
+poisoning if the model retrains on live traffic without validation. Systems
+that expose an API endpoint returning a decision (price, risk score, approval)
+without rate-limiting are especially exposed to the first two.

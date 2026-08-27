@@ -1,0 +1,33 @@
+Consequentialist frameworks judge an action by its outcomes: personalized AI
+pricing is justified if it increases total welfare (more transactions occur,
+some buyers pay less than the old flat price), even if it makes some buyers
+worse off, as long as aggregate benefit outweighs aggregate harm. The
+weakness of this framing is that it can justify concentrating harm on a
+vulnerable minority as long as the majority benefits, which is precisely the
+scenario personalized pricing risks: it tends to charge more to buyers with
+fewer alternatives, who are often already disadvantaged.
+
+Deontological frameworks ask whether the action itself, independent of
+outcome, violates a duty or a right -- most relevantly here, a duty of
+transparency and a right against being manipulated using information the
+buyer didn't knowingly share. Charging someone a higher price based on
+inferred desperation or lack of alternatives, without disclosure, arguably
+violates informed consent even if no explicit deception occurred, because
+consent requires the buyer to understand the terms they're accepting.
+
+Fairness in the Rawlsian sense asks: would you accept this pricing system if
+you didn't know in advance which side of it you'd be on? Personalized pricing
+that systematically extracts more from lower-income or less price-savvy
+buyers fails this test, because a rational person behind the "veil of
+ignorance" would not choose a system that could disadvantage them without
+their knowledge.
+
+On surveillance and monitoring: the core ethical tension is proportionality --
+whether the harm prevented justifies the autonomy and privacy cost imposed on
+everyone being monitored, including the overwhelming majority who did nothing
+wrong. Justified surveillance regimes typically require narrow scope, time
+limits, oversight independent of the party doing the surveilling, and a
+articulated threat the monitoring is proportionate to. Absent those
+constraints, surveillance tends to expand past its original justification --
+this is sometimes called mission creep, and it is one of the most
+well-documented failure modes in applied ethics of monitoring systems.

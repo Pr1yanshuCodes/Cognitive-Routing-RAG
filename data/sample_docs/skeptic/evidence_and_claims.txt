@@ -1,0 +1,29 @@
+Claims that "AI will replace most jobs" or "AI pricing is inherently
+exploitative" are both underspecified until you ask: replace at what rate,
+over what timeframe, measured how? Historical automation waves (mechanized
+agriculture, computerization of clerical work) reduced employment in specific
+occupations while increasing total employment over decades, because new
+categories of work emerged that didn't previously exist. That doesn't prove
+this wave behaves the same way -- the honest position is that the base rate
+for "this time is different" predictions has historically been poor, but
+that's evidence, not proof, and AI-driven cognitive automation differs from
+prior mechanical automation in ways that are genuinely not yet resolved.
+
+On personalized pricing specifically: the empirical evidence that AI systems
+are currently doing widescale first-degree price discrimination in consumer
+markets is thinner than the discourse around it suggests. Most documented
+cases are simpler forms -- geographic pricing, device-based pricing (e.g.,
+different prices shown to Mac vs. Windows users), and loyalty-based pricing --
+which are well-studied and closer to third-degree discrimination than the
+individualized "one price per person" scenario that generates the most
+alarming headlines. Distinguishing "this is technically possible" from "this
+is currently happening at scale" matters, and much of the public discussion
+conflates the two.
+
+A useful skeptic's checklist for any confident claim: what is the actual
+study or dataset behind this number, what is the sample size and who
+funded it, does the claimed effect replicate outside the original study,
+and what would we expect to observe if the claim were false versus if it were
+true? If a claim can't in principle be falsified by any observation, it's not
+an empirical claim, it's a framing choice, and should be labeled as such
+rather than debated as if it were a factual dispute.

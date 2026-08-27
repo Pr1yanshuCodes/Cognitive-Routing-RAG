@@ -1,0 +1,38 @@
+Dynamic and personalized pricing lets a seller set different prices for different
+buyers based on observed willingness to pay, rather than one posted price for
+everyone. Classic price discrimination theory splits this into three degrees:
+first-degree (a unique price per buyer, the theoretical maximum extraction of
+consumer surplus), second-degree (menus like bulk discounts or tiered plans,
+where buyers self-select), and third-degree (different prices for different
+observable groups, like student discounts).
+
+Economically, perfect first-degree discrimination is efficient in the narrow
+sense that it maximizes the number of transactions that occur -- every buyer
+whose valuation exceeds marginal cost gets served -- but it transfers nearly
+all the surplus from consumer to producer. The efficiency gain and the
+distributional harm happen at the same time, which is why the same policy can
+be defended as welfare-maximizing and attacked as extractive depending on which
+metric you weight.
+
+AI-driven personalized pricing approximates first-degree discrimination using
+behavioral and demographic signals as proxies for willingness to pay. The
+economic risk isn't just "consumers pay more" -- it's that pricing becomes
+opaque and unpredictable, which itself has a cost: buyers can no longer
+comparison-shop effectively, undermining the price-discovery function markets
+are supposed to serve.
+
+Minimum wage increases raise the cost of the cheapest labor inputs. Standard
+competitive-market theory predicts reduced employment among low-wage workers;
+empirical labor economics over the last three decades (notably the Card-Krueger
+natural experiments) has found much smaller or near-zero disemployment effects
+in many real-world cases, which is now attributed to employer monopsony power
+in local labor markets rather than the textbook competitive model. The honest
+answer is that the effect size is empirically contested and depends heavily on
+local labor market structure, not settled either direction.
+
+Tariffs raise the domestic price of an imported good by roughly the tariff
+amount in the short run, though the split between "consumers pay more" and
+"foreign producers absorb margin" depends on the price elasticity of demand
+and supply on both sides. Tariffs protect the specific domestic industry being
+shielded, at a broadly distributed cost to consumers and downstream industries
+that use the tariffed good as an input.
